@@ -1,101 +1,195 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishal's Portfolio</title>
+    <title>Vishal Singh Rajawat | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div class="logo">Vishal</div>
-        <div class="menu-toggle">&#9776;</div>
+    <!-- Header Section -->
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Vishal Singh Rajawat</h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li> <!-- This will open resume.html -->
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
+
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Hi, I'm <span class="highlight">Vishal</span></h2>
-            <p>Final-Year Electronics Engineer | ML & Web Dev Enthusiast</p>
-            <a href="#contact" class="btn">Hire Me</a>
+    <section class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Vishal Singh Rajawat</span> 👋</h1>
+            <p>Data Science / Machine Learning Engineer | AI/ML Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- About Me Section -->
+<section id="about" class="about">
+    <div class="container">
         <h2>About Me</h2>
-        <p>I am a final-year electronics engineering student passionate about Machine Learning, Deep Learning, NLP, and Computer Vision. I love solving real-world problems with technology.</p>
+        <p>
+            I am a passionate Full Stack Developer and Machine Learning enthusiast, 
+            currently in my final year at M.B.M. University. I enjoy building scalable 
+            web applications and working on AI-based solutions. My experience includes 
+            working with the MERN stack for web development and TensorFlow for deep learning projects.
+        </p>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Object Detection and Recognition</h3>
+                    <p>Real-time cricket score update system using MERN stack.</p>
+                    <a href="projects/cricbuzz-clone.html" class="btn">View Details</a>
+                </div>
+                <div class="project">
+                    <h3>Car Price Predictor</h3>
+                    <p>Real-time cricket score update system using MERN stack.</p>
+                    <a href="projects/cricbuzz-clone.html" class="btn">View Details</a>
+                </div>
+                <div class="project">
+                    <h3>Cricket Match Result Predictor</h3>
+                    <p>Real-time cricket score update system using MERN stack.</p>
+                    <a href="projects/cricbuzz-clone.html" class="btn">View Details</a>
+                </div>
+                <div class="project">
+                    <h3>Shopping Website</h3>
+                    <p>AI-powered device to assist visually impaired individuals.</p>
+                    <a href="projects/object-detection.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+<section id="skills" class="skills">
+    <div class="container">
         <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">Python</div>
-            <div class="skill">TensorFlow</div>
-            <div class="skill">Deep Learning</div>
-            <div class="skill">Computer Vision</div>
-            <div class="skill">React.js</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">MongoDB</div>
-            <div class="skill">Raspberry Pi</div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Facial Recognition Attendance System</h3>
-            <p>Python, OpenCV, TensorFlow Lite</p>
+        <!-- Web Development -->
+        <div class="skill-category">
+            <h3>Web Development</h3>
+            <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>Bootstrap</span>
+                <span>Tailwind CSS</span>
+            </div>
         </div>
-        <div class="project">
-            <h3>CricBuzz Clone (MERN Stack)</h3>
-            <p>React, Node.js, MongoDB</p>
+
+        <!-- Data Science & AI -->
+        <div class="skill-category">
+            <h3>Data Science & AI</h3>
+            <div class="skills-list">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>OpenCV</span>
+                <span>Machine Learning</span>
+                <span>Deep Learning</span>
+                <span>Natural Language Processing</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Scikit-Learn</span>
+            </div>
         </div>
-        <div class="project">
-            <h3>Object Detection Device for the Blind</h3>
-            <p>Raspberry Pi, Ultrasonic Sensors, TensorFlow</p>
+
+        <!-- Databases & Backend -->
+        <div class="skill-category">
+            <h3>Databases & Backend</h3>
+            <div class="skills-list">
+                <span>MongoDB</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>Firebase</span>
+                <span>GraphQL</span>
+                <span>RESTful APIs</span>
+                <span>Socket.io</span>
+            </div>
         </div>
-    </section>
+
+        <!-- Programming Languages & Tools -->
+        <div class="skill-category">
+            <h3>Programming Languages & Tools</h3>
+            <div class="skills-list">
+                <span>C</span>
+                <span>C++</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>Git & GitHub</span>
+                <span>Docker</span>
+                <span>Postman</span>
+                <span>Linux</span>
+                <span>Jupyter Notebook</span>
+                <span>VS Code</span>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Let's connect and build something amazing!</p>
-        <div class="social-icons">
-            <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
     </section>
 
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Address Section -->
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>High Court Colony,Ratanada, Jodhpur, Rajasthan, India (342011)</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:vishalsinghrajawat0022@gmail.com">vishalsinghrajawat0022@gmail.com</a></p>
+                <p>Phone: +91 XXXXXXXXXX</p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <a href="https://github.com/VSrajawat0022" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/vishalsinghrajawat" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <p class="footer-text">&copy; 2025 Vishal Singh Rajawat. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
->>>>>>> 672fea0 (Commit Chnages)
